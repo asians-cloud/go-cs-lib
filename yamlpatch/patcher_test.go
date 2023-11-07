@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/crowdsecurity/go-cs-lib/yamlpatch"
+	"github.com/asians-cloud/go-cs-lib/yamlpatch"
 	"github.com/stretchr/testify/require"
 )
 

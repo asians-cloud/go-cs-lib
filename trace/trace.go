@@ -7,7 +7,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/crowdsecurity/go-cs-lib/version"
+	"github.com/asians-cloud/go-cs-lib/version"
 )
 
 func WriteStackTrace(iErr interface{}) string {
@@ -37,7 +37,7 @@ func WriteStackTrace(iErr interface{}) string {
 func CatchPanic(component string) {
 	if r := recover(); r != nil {
 		log.Errorf("crowdsec - goroutine %s crashed : %s", component, r)
-		log.Errorf("please report this error to https://github.com/crowdsecurity/crowdsec/")
+		log.Errorf("please report this error to https://github.com/asians-cloud/crowdsec/")
 		filename := WriteStackTrace(r)
 		log.Errorf("stacktrace/report is written to %s : please join it to your issue", filename)
 		log.Fatalf("crowdsec stopped")

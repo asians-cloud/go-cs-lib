@@ -1,4 +1,4 @@
-module github.com/crowdsecurity/go-cs-lib
+module github.com/asians-cloud/go-cs-lib
 
 go 1.20
 
